@@ -1,0 +1,8 @@
+services:
+  retinex_net:
+    build:
+      context: .
+      dockerfile: retinexnet.dockerfile
+    command: python -u main.py --phase=test
+    volumes:
+      - .:/usr/src/app
